@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/pages/main.css">
+  <title>My Intranet</title>
+</head>
+<body>
+  <div id="root">
+    <div id="home">
+      <main id="main">
+      <header id="header">
+        <div class="logo">
+          <img src="../../resources/images/logo.png" alt="" width="50">
+          <h1>
+            <span>Universidad Nacional</span><br>
+            <span>José Faustino Sánchez Carrión</span>
+          </h1>
+        </div>
+      </header>
+        <h2>Intranet</h2>
+        <form action="#" id="form">
+          <span><label for="input-user">usuario : &ensp;</label><input maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text" name="code" id="input-user"></span>
+          <span><label for="input-password">contraseña : &ensp;</label><input type="password" name="password" id="input-password"></span>
+          <a href="#">¿Has olvidado tu contraseña?</a>
+          <!-- <input type="submit" value="Iniciar sesión" class="button"> -->
+          <a href="/src/routes/evaluaciones-parciales.html" class="button">Iniciar sesión</a>
+        </form>
+      </main>
+      <aside id="aside">
+        <figure>
+          <img src="resources/images/aside.jpg" alt="facultadad de negocios internacionales" width="300">
+          <figcaption>Le recordamos que tambien puede utilizar el servicio de correo electrónico institucional que ofrece la
+            universidad a
+            toda la comunidad universitaria.</figcaption>
+        </figure>
+      </aside>
+      <footer id="footer">
+        <span>Universidad Nacional José Faustino Sánchez Carrión</span>
+        <span>&ensp;&ndash;&ensp;Intranet</span>
+        <time datetime="2012">2020&ensp;</time>
+        <span>&copy;&ensp;Derechos Reservados</span>
+      </footer>
+    </div>
+  </div>
+  <script type="module" src="src/functionality/login.js"></script>
+</body>
+</html>

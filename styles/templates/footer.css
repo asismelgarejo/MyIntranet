@@ -1,0 +1,15 @@
+#footer{
+  color: var(--color-white);
+  background-image: linear-gradient(to bottom,var(--color-main), var(--color-inverse-main) 96%,var(--color-main) 98%, var(--color-main));
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-small-s);
+  flex-direction: column;
+  margin-top: .2em;
+}
+#footer > address{
+  font-style: normal;
+  text-align: center;
+}

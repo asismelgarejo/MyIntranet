@@ -1,0 +1,174 @@
+@import '../fonts/fonts.css';
+@import '../variables.css';
+
+
+@import '../templates/header.css';
+@import '../templates/footer.css';
+
+/******************************** OVERALL ********************************/
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  font-family: var(--font-main);
+  font-size: var(--font-size-small);
+}
+
+ul{
+  list-style: none;
+  padding:0;
+  margin: 0;
+}
+ul li{
+  padding:0;
+}
+/* ************************************************************** */
+#main-student{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "navigation renderer";
+}
+
+/* ************************************************************** */
+#navigation{
+  background-color: var(--color-light-gray);
+  width: 195px;
+  padding: 0.7em .5em;
+  height: fit-content;
+  grid-area: navigation;
+}
+#navigation * {
+  font-size: var(--font-size-small);
+  font-weight: normal;
+}
+#navigation > div:first-child{
+  border: thin solid var(--color-main);
+  border-bottom: none;
+  background-color: var(--color-main);
+  background-image: linear-gradient(to bottom, var(--color-inverse-main), var(--color-inverse-main) 55%,var(--color-inverse-main-dark) 55%, var(--color-inverse-main-dark));
+  padding: .2em;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 4px 4px 0 0;
+  transition: all .3s;
+}
+#navigation > div:first-child h2{
+  margin: 0;
+  padding-right: 63.2%;
+  border-right: thin solid var(--color-main);
+  color: var(--color-main);
+}
+#navigation > div:first-child span{
+  padding: -.1em;
+  font-size: 1.9em;
+  cursor: pointer;
+  color: var(--color-mustard);
+  transition: all .3s;
+}
+
+
+#navigation > div:last-child{
+  border: thin solid var(--color-main);
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+  height: 468px;
+  transition-property: all;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+#navigation > div:last-child h3{
+  background-color: var(--color-inverse-main);
+  margin: 0;
+  padding: .2em 0 .2em .5em;
+}
+#navigation > div:last-child ul{
+  padding: 0 1em;
+}
+#navigation > div:last-child ul li{
+  margin: 0.36em 0;
+}
+#navigation > div:last-child ul a{
+  text-decoration: none;
+  line-height: 1.1em;
+  color: var(--color-blue);
+}
+#navigation > div:last-child ul a:hover{
+  color: var(--color-main);
+}
+/* **************************TABLE************************************ */
+#renderer{
+  grid-area: renderer;
+}
+#renderer > div:first-child{
+  width: 758px;
+  background-color: var(--color-gray);
+  border: thin solid var(--color-main);
+  padding: 0 .2em .2em;
+  margin-left: .7em;
+}
+table{
+  border-collapse: collapse;
+}
+th,td{
+  border: thin solid var(--color-main-light);
+  /* padding: .2em 0.849em; */
+}
+table#partial-evaluations{
+  font-size: var(--font-size-small-s);
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--color-white);
+}
+table#partial-evaluations caption{
+  font-size: 12px;
+  font-weight: bolder;
+  margin-bottom: .6em;
+}
+table#partial-evaluations tbody{
+  color: var(--color-main);
+}
+
+
+table#partial-evaluations th{
+  background-image: linear-gradient(to bottom, var(--color-main-light), var(--color-main-light) 65%,var(--color-main) 65%, var(--color-main));
+  padding: .44em 0;
+  font-size: var(--font-size-small-xs);
+  color: var(--color-white);
+}
+/* EXPERTIMENTAL */
+thead tr:first-child th {
+  width: 121.6px;
+}
+thead tr:first-child th:first-child,
+thead tr:first-child th:last-child {
+  width: fit-content;
+}
+/* ************** */
+
+table#partial-evaluations #col-course{
+  width: 236px;
+}
+table#partial-evaluations #course-name{
+  text-transform: capitalize;
+}
+table#partial-evaluations .course-name{
+  text-align: left;
+  padding-left: .1em;
+}
+table#partial-evaluations .average,
+table#partial-evaluations .final-average{
+  background-color: var(--color-inverse-main);
+  width: 3em;
+}
+table#partial-evaluations .note,
+table#partial-evaluations .final-note{
+  font-weight: bold;
+}
+
+table#partial-evaluations tfoot td{
+  padding-top: 1.5em;
+  background-color: var(--color-white);
+}

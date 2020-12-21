@@ -1,0 +1,21 @@
+{
+  "name": "myintranet",
+  "version": "1.0.0",
+  "description": "This project consists in creating an intranet using modern web tools.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "html"
+  ],
+  "author": "Asis Melgarejo",
+  "license": "MIT",
+  "dependencies": {
+    "live": "^0.1.25-beta.0",
+    "live-server": "^1.2.1",
+    "server": "^1.0.31"
+  }
+}

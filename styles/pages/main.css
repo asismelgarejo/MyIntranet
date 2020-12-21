@@ -1,0 +1,149 @@
+@import '../variables.css';
+
+*{
+  box-sizing: border-box;
+}
+
+#home{
+  background-color: var(--color-white);
+  width: 800px;
+  margin: 0 auto;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 359px auto;
+  grid-template-rows: auto 30px;
+  grid-template-areas: "main aside""footer footer";
+  row-gap: 3em;
+  font-family: var(--font-main);
+  margin-top: 150px;
+}
+
+
+/****************************** MAIN***************************** */
+
+#main{
+  background-image: linear-gradient(to bottom,var(--color-main), var(--color-inverse-main));
+  height: 400px;
+  width: 350px;
+  border-radius: 4px;
+  font-family: inherit;
+  padding: .5em 1em;
+}
+
+/* HEADER */
+#header{
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  justify-content: space-between;
+  height: 57px;
+  padding: 0 1em;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Logo */
+#header .logo{
+  display: flex;
+  align-items: center;
+}
+#header .logo img{
+  margin-right: .7em;
+  width: 50px;
+}
+#header .logo h1{
+  text-transform: uppercase;
+  font-family: var(--font-logo);
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-shadow: 0 .1em .2em black;
+  font-weight: lighter;
+  line-height: .8em;
+  margin: 0;
+  font-size: 1.1rem;
+}
+#header .logo h1 span:first-child{
+  font-size: 1.1em;
+  line-height: .8em;
+}
+#header .logo h1 span:last-child{
+  font-size: .79em;
+  opacity: .9;
+}
+
+
+#main h2{
+  text-transform: uppercase;
+  font-family: var(--font-f-impact);
+  color: var(--color-impact);
+  text-shadow: .02em 0.03em .05em var(--color-white);
+  margin: 1em 0;
+  line-height: .8em;
+}
+
+#form{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+#form input{
+  margin: .5em 40px .5em 0;
+  padding: .2em;
+  width: 156px;
+}
+#form a{
+  margin: 1em 0;
+  color: var(--color-main);
+  font-size: var(--font-size-small);
+}
+#form a:hover{
+  text-decoration: none;
+}
+#form .button{
+  margin-right: 96px;
+  width: 100px;
+  border: thin solid var(--color-main);
+  border-radius: 2px;
+  /* cursor: pointer; */
+  font-size: 12px;
+  color: var(--color-impact);
+  background-color: var(--color-gray);
+  text-decoration: none;
+  text-align: center;
+  padding: .2em 0;
+  }
+
+/****************************** ***************************** */
+#aside{
+  width: 420px;
+  padding: 0 1.5em 0 2.5em;
+  border-left: thin solid var(--color-main);
+  font-family: inherit;
+  height: 400px;
+}
+#aside figure{
+  width: 100%;
+  margin: 0;
+}
+#aside figure img{
+  width: 100%;
+}
+#aside figcaption{
+  width: 100%;
+  padding: .5em 1em;
+  font-size: var(--font-size-small-s);
+}
+
+
+/* FOOTER */
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 29px;
+  font-size: var(--font-size-small-s);
+  grid-area: footer;
+  border-top: thin solid var(--color-main);
+}

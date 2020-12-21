@@ -1,0 +1,65 @@
+
+#header{
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  background-image: linear-gradient(to bottom,var(--color-main), var(--color-inverse-main) 96%,var(--color-main) 98%, var(--color-main));
+  justify-content: space-between;
+  height: 57px;
+  padding: 0 1em;
+  margin-bottom: .2em;
+}
+
+/* Logo */
+#header .logo{
+  display: flex;
+  align-items: center;
+  margin-left: 1.5em;
+}
+#header .logo img{
+  margin-right: .7em;
+  width: 40px;
+}
+#header .logo h1{
+  text-transform: uppercase;
+  font-family: var(--font-logo);
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-shadow: 0 .1em .2em black;
+  font-weight: lighter;
+  line-height: .8em;
+  margin: 0;
+  font-size: .9rem;
+}
+#header .logo h1 span:first-child{
+  font-size: 1.1em;
+  line-height: .8em;
+}
+#header .logo h1 span:last-child{
+  font-size: .79em;
+  opacity: .9;
+}
+
+/* DIV LEFT */
+#header > div:last-child{
+  text-align: end;
+}
+#header > div:last-child > strong{
+  font-size: var(--font-size-medium);
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: .5em;
+}
+#header > div:last-child > div:last-child a{
+  color: inherit;
+  padding: 0 .5em;
+  border-right: thin solid var(--color-main);
+  font-size: var(--font-size-small-s);
+}
+#header > div:last-child > div:last-child a:hover{
+  color: var(--color-yellow)
+}
+#header > div:last-child > div:last-child a:last-child{
+  border-right: none;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+/* COLORS */
+:root{
+  --color-light-gray: #efefef;
+  --color-orange: #ffa500;
+  --color-gray: #e1e1e1;
+  --color-main: #453c2c;
+  --color-main-light: #86775c;
+  --color-inverse-main: #bac3d3; /*inverse main color*/
+  --color-inverse-main-dark: #7988a3; /*inverse main color*/
+  --color-transparent: transparent;
+  --color-gold: #CDBE70;
+  --color-mustard: #f4e274;
+  --color-yellow: yellow;
+  --color-white: white;
+  --color-blue:#026890;
+  --color-impact:#033966;
+}
+/* FONTS */
+:root{
+  --font-main: 'Verdana', Geneva, sans-serif;
+  --font-f-impact: 'Russo One', Geneva, sans-serif;
+  --font-size-small-xs: 9px;
+  --font-size-small-s: 10px;
+  --font-size-small: 11px;
+  --font-size-medium: 13px;
+  --font-size-big: 1rem;
+  --font-logo: 'Castoro', serif;
+}

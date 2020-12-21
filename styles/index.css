@@ -1,0 +1,26 @@
+@import url(variables.css);
+@import url(components/home.css);
+@import url(fonts/fonts.css);
+@import url(components.css);
+
+/* TEMPLATES */
+@import url(templates/header.css);
+@import url(templates/footer.css);
+
+
+/* PAGES */
+@import url(pages/partial-evaluations.css);
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--font-main);
+  font-size: 10px;
+  margin: 0;
+}
+/* #root{
+  margin: calc((100vh - 410px)/2) auto 0;
+  height: fit-content;
+  width: fit-content;
+} */
